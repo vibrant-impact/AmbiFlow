@@ -107,12 +107,4 @@ The goal of AmbiFlow is to allow users to shape an ambient environment without n
 
 ![AmbiFlow Welcome Screen](Documentation/Screenshots/welcome-screen.png)
 
-> To add your own screenshots, place them in:
->
-> ```text
-> Documentation/Screenshots/
-> ```
->
-> Then update the image paths above.
 
----
