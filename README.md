@@ -116,12 +116,3 @@ The goal of AmbiFlow is to allow users to shape an ambient environment without n
 > Then update the image paths above.
 
 ---
-
-## Demo
-
-Add a short screen recording or animated GIF here:
-
-```markdown
-<p align="center">
-  <img src="Documentation/Media/ambiflow-demo.gif" alt="AmbiFlow demo" width="320">
-</p>
