@@ -83,28 +83,37 @@ The goal of AmbiFlow is to allow users to shape an ambient environment without n
 
 ## Screenshots
 
-### Harmonic Soundstage
-
-![Harmonic Soundstage](Documentation/Screenshots/harmonic-soundstage.png)
-
-### Main Melody Controls
-
-![Main Melody Controls](Documentation/Screenshots/main-melody.png)
-
-### Atmosphere Mixer
-
-![Atmosphere Mixer](Documentation/Screenshots/atmosphere-mixer.png)
-
-### Generative Voice
-
-![Generative Voice](Documentation/Screenshots/generative-voice.png)
-
-### Saved Playlists
-
-![Saved Playlists](Documentation/Screenshots/saved-playlists.png)
-
-### Welcome Screen
-
-![AmbiFlow Welcome Screen](Documentation/Screenshots/welcome-screen.png)
+<table>
+  <tr>
+    <td align="center">
+      <img src="Documentation/Screenshots/harmonic-soundstage.png" alt="Harmonic Soundstage visualizer" width="320"><br>
+      <sub><b>Harmonic Soundstage</b></sub>
+    </td>
+    <td align="center">
+      <img src="Documentation/Screenshots/main-melody.png" alt="Main Melody Controls" width="320"><br>
+      <sub><b>Main Melody</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="Documentation/Screenshots/atmosphere-mixer.png" alt="Atmosphere Mixer" width="320"><br>
+      <sub><b>Atmosphere Mixer</b></sub>
+    </td>
+    <td align="center">
+      <img src="Documentation/Screenshots/generative-voice.png" alt="Generative Voice controls" width="320"><br>
+      <sub><b>Generative Voice</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+       <img src="Documentation/Screenshots/welcome-screen.png" alt="Welcome Screen" width="320"><br>
+      <sub><b>Welcome Screen</b></sub>
+    </td>
+    <td align="center">
+      <img src="Documentation/Screenshots/saved-playlists.png" alt="Saved Playlists" width="320"><br>
+      <sub><b>Saved Playlists</b></sub>
+    </td>
+  </tr>
+</table>
 
 
