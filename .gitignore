@@ -1,0 +1,50 @@
+# macOS
+.DS_Store
+
+# Xcode user-specific files
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+
+# Xcode build files
+DerivedData/
+build/
+Build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Firebase configuration
+GoogleService-Info.plist
+
+# Local environment and secret files
+.env
+.env.*
+!.env.example
+
+# Visual Studio Code personal settings
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
