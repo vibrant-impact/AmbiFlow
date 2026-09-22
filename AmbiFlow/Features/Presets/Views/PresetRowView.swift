@@ -14,16 +14,42 @@ struct PresetRowView: View {
     let theme: AppTheme
     let action: () -> Void
     let deleteAction: (() -> Void)?
+    let accentColor: Color?
+    
+    init(
+        title: String,
+        subtitle: String,
+        isLoaded: Bool,
+        theme: AppTheme,
+        action: @escaping () -> Void,
+        deleteAction: (() -> Void)?,
+        accentColor: Color? = nil
+    ) {
+        self.title = title
+        self.subtitle = subtitle
+        self.isLoaded = isLoaded
+        self.theme = theme
+        self.action = action
+        self.deleteAction = deleteAction
+        self.accentColor = accentColor
+    }
+    
+    private var displayAccentColor: Color {
+        accentColor ?? theme.accentColor
+    }
     
     var body: some View {
         HStack {
             Button(action: action) {
-                VStack(alignment: .leading, spacing: 2) {
+                VStack(
+                    alignment: .leading,
+                    spacing: 2
+                ) {
                     Text(title)
                         .font(.caption.bold())
                         .foregroundColor(
                             isLoaded
-                            ? theme.accentColor
+                            ? displayAccentColor
                             : .white
                         )
                     
@@ -40,7 +66,8 @@ struct PresetRowView: View {
             if isLoaded {
                 StatusBadgeView(
                     theme: theme,
-                    isPlaying: false
+                    isPlaying: false,
+                    accentColor: displayAccentColor
                 )
             }
             
@@ -48,18 +75,22 @@ struct PresetRowView: View {
                 Button(action: deleteAction) {
                     Image(systemName: "trash")
                         .font(.caption)
-                        .foregroundColor(.red.opacity(0.7))
+                        .foregroundColor(
+                            .red.opacity(0.7)
+                        )
                 }
             } else if !isLoaded {
                 Image(systemName: "chevron.right")
                     .font(.caption2)
-                    .foregroundColor(.slate.opacity(0.5))
+                    .foregroundColor(
+                        .slate.opacity(0.5)
+                    )
             }
         }
         .padding(10)
         .background(
             isLoaded
-            ? theme.badgeBg.opacity(0.3)
+            ? displayAccentColor.opacity(0.18)
             : Color.black.opacity(0.2)
         )
         .cornerRadius(10)
@@ -67,7 +98,7 @@ struct PresetRowView: View {
             RoundedRectangle(cornerRadius: 10)
                 .stroke(
                     isLoaded
-                    ? theme.accentColor.opacity(0.3)
+                    ? displayAccentColor.opacity(0.45)
                     : Color.clear,
                     lineWidth: 1
                 )

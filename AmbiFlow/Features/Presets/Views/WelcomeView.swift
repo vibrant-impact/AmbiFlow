@@ -22,10 +22,11 @@ struct WelcomeView: View {
                 VStack(spacing: 28) {
                     Spacer(minLength: 40)
                     
-                    Image(systemName: "waveform")
-                        .font(.system(size: 80))
-                        .foregroundColor(theme.accentColor)
-                        .symbolEffect(.pulse)
+                    AmbiFlowLogoView(
+                        isAnimating: true,
+                        size: 120,
+                        glowColor: theme.accentColor
+                    )
                     
                     VStack(spacing: 10) {
                         Text("Welcome to AmbiFlow")

@@ -36,12 +36,14 @@ struct CuratedPresetsView: View {
                                 action: {
                                     viewModel.loadScene(
                                         preset.parameters,
-                                        named: preset.name
+                                        named: preset.name,
+                                        accent: preset.accent
                                     )
                                     
                                     viewModel.updateEngineParameters()
                                 },
-                                deleteAction: nil
+                                deleteAction: nil,
+                                accentColor: preset.accent.color
                             )
                         }
                     }

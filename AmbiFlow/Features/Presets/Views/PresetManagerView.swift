@@ -17,7 +17,9 @@ struct PresetManagerView: View {
     
     var body: some View {
         let theme = AppTheme.current(
-            for: viewModel.parameters.scale
+            for: viewModel.parameters.scale,
+            accentOverride:
+                viewModel.currentSoundscapeAccent
         )
         
         VStack(alignment: .leading, spacing: 16) {

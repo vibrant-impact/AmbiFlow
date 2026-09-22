@@ -10,11 +10,16 @@ import SwiftUI
 struct StatusBadgeView: View {
     let theme: AppTheme
     let isPlaying: Bool
+    let accentColor: Color?
+    
+    private var displayAccentColor: Color {
+        accentColor ?? theme.accentColor
+    }
     
     var body: some View {
         HStack(spacing: 4) {
             Circle()
-                .fill(theme.accentColor)
+                .fill(displayAccentColor)
                 .frame(width: 4, height: 4)
             
             Text(isPlaying ? "Playing" : "Loaded")
@@ -25,11 +30,13 @@ struct StatusBadgeView: View {
                         design: .monospaced
                     )
                 )
-                .foregroundColor(theme.accentColor)
+                .foregroundColor(displayAccentColor)
         }
         .padding(.horizontal, 6)
         .padding(.vertical, 3)
-        .background(theme.badgeBg)
+        .background(
+            displayAccentColor.opacity(0.16)
+        )
         .cornerRadius(6)
     }
 }

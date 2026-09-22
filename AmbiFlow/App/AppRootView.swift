@@ -21,7 +21,9 @@ struct AppRootView: View {
     
     var body: some View {
         let activeTheme = AppTheme.current(
-            for: ambientViewModel.parameters.scale
+            for: ambientViewModel.parameters.scale,
+            accentOverride:
+                ambientViewModel.currentSoundscapeAccent
         )
         
         ZStack {
@@ -103,17 +105,10 @@ struct AppRootView: View {
                 spacing: 4
             ) {
                 HStack(spacing: 8) {
-                    Image(systemName: "radio.fill")
-                        .font(
-                            .system(
-                                size: 28,
-                                weight: .bold
-                            )
-                        )
-                        .foregroundColor(theme.accentColor)
-                        .symbolEffect(
-                            .pulse,
-                            isActive: ambientViewModel.isPlaying
+                    AmbiFlowLogoView(
+                            isAnimating: ambientViewModel.isPlaying,
+                            size: 50,
+                            glowColor: theme.accentColor
                         )
                     
                     Text("AmbiFlow")

@@ -22,6 +22,7 @@ class AmbientViewModel: ObservableObject {
     @Published var showWelcomeModal: Bool = true
     @Published var currentUserId: String? = nil
     @Published private(set) var currentSoundscapeName = "New Soundscape"
+    @Published private(set) var currentSoundscapeAccent: PresetAccent?
     
     // MARK: - Internal Algorithmic Properties
     private var currentWalkIndex: Int = 7
@@ -277,12 +278,15 @@ class AmbientViewModel: ObservableObject {
     
     func loadScene(
         _ newParameters: SoundscapeParameters,
-        named name: String? = nil
+        named name: String? = nil,
+        accent: PresetAccent? = nil
     ) {
         parameters = newParameters
         
         currentSoundscapeName =
             name ?? "Custom Soundscape"
+        
+        currentSoundscapeAccent = accent
         
         updateEngineParameters()
     }

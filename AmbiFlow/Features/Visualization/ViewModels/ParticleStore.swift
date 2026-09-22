@@ -48,7 +48,7 @@ final class ParticleStore {
         case 0.7..<0.85:
             color = .sky
         default:
-            color = .emerald
+            color = .teal
         }
         
         let particle = NoteParticle(
