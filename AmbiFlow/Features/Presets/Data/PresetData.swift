@@ -23,54 +23,54 @@ enum PresetData {
         soundscape13
     ]
     
-    // MARK: - Deep Space
+    // MARK: - Soundscape 1
     
     private static let soundscape1: CuratedPreset = {
         var parameters = SoundscapeParameters()
         
         parameters.selectedBaseMelodyLoop = .groundingHandpan
         parameters.isBaseMelodyActive = true
-        parameters.baseMelodyVolume = 0.55
+        parameters.baseMelodyVolume = 0.75
         
         parameters.selectedInstrument = .steelTongueDrum
         parameters.isInstrumentActive = true
-        parameters.instrumentVolume = 0.47
+        parameters.instrumentVolume = 0.67
         
         parameters.melodyIntervalDelay = 1.85
         parameters.scale = .hirajoshi
         
-        parameters.oceanVolume = 0.05
+        parameters.oceanVolume = 0.25
         parameters.rainVolume = 0.0
         parameters.fireVolume = 0.0
-        parameters.deepDroneVolume = 0.47
+        parameters.deepDroneVolume = 0.67
         parameters.airyDroneVolume = 0.0
         parameters.didgeridooVolume = 0.0
         parameters.snapVolume = 0.0
         parameters.drumVolume = 0.0
         parameters.percussionVolume = 0.0
-        parameters.purrVolume = 0.29
+        parameters.purrVolume = 0.49
         parameters.cosmicVolume = 0.0
         
         return CuratedPreset(
-            name: "soundscape1",
-            description: "Slow, spacious tones for drifting and contemplation.",
+            name: "Zenith Drift",
+            description: "Grounding handpan layered with meditative steel tongue drum over distant waves and a deep purr drone.",
             parameters: parameters,
             accent: .indigo
         )
     }()
     
-    // MARK: - Ocean Zen
+    // MARK: - Soundscape 2
     
     private static let soundscape2: CuratedPreset = {
         var parameters = SoundscapeParameters()
         
         parameters.selectedBaseMelodyLoop = .somaticPulse
         parameters.isBaseMelodyActive = true
-        parameters.baseMelodyVolume = 0.55
+        parameters.baseMelodyVolume = 0.75
         
         parameters.selectedInstrument = .bass
         parameters.isInstrumentActive = true
-        parameters.instrumentVolume = 0.29
+        parameters.instrumentVolume = 0.49
         
         parameters.melodyIntervalDelay = 2.2
         parameters.scale = .hirajoshi
@@ -79,79 +79,79 @@ enum PresetData {
         parameters.rainVolume = 0.0
         parameters.fireVolume = 0.0
         parameters.deepDroneVolume = 0.0
-        parameters.airyDroneVolume = 0.41
-        parameters.didgeridooVolume = 0.15
+        parameters.airyDroneVolume = 0.61
+        parameters.didgeridooVolume = 0.35
         parameters.snapVolume = 0.0
         parameters.drumVolume = 0.0
         parameters.percussionVolume = 0.0
-        parameters.purrVolume = 0.26
+        parameters.purrVolume = 0.46
         parameters.cosmicVolume = 0.0
         
         return CuratedPreset(
-            name: "soundscape2",
-            description: "Gentle water and sparse melodic movement.",
+            name: "Somatic Awakening",
+            description: "Warm sub-bass pulses woven with airy didgeridoo tones for centered physical grounding.",
             parameters: parameters,
             accent: .gold
         )
     }()
     
-    // MARK: - Rainy Focus
+    // MARK: - Soundscape 3
     
     private static let soundscape3: CuratedPreset = {
         var parameters = SoundscapeParameters()
         
         parameters.selectedBaseMelodyLoop = .celestialVoices
         parameters.isBaseMelodyActive = false
-        parameters.baseMelodyVolume = 0.3
+        parameters.baseMelodyVolume = 0.5
         
         parameters.selectedInstrument = .vibraphone
         parameters.isInstrumentActive = true
-        parameters.instrumentVolume = 0.5
+        parameters.instrumentVolume = 0.7
         
         parameters.melodyIntervalDelay = 2.6
         parameters.scale = .aMinorPentatonic
         
         parameters.oceanVolume = 0.0
         parameters.rainVolume = 0.0
-        parameters.fireVolume = 0.05
-        parameters.deepDroneVolume = 0.22
-        parameters.airyDroneVolume = 0.3
+        parameters.fireVolume = 0.25
+        parameters.deepDroneVolume = 0.42
+        parameters.airyDroneVolume = 0.5
         parameters.didgeridooVolume = 0.0
         parameters.snapVolume = 0.0
         parameters.drumVolume = 0.0
         parameters.percussionVolume = 0.0
         parameters.purrVolume = 0.0
-        parameters.cosmicVolume = 0.06
+        parameters.cosmicVolume = 0.26
         
         return CuratedPreset(
-            name: "soundscape3",
-            description: "Soft rainfall with subtle background harmony.",
+            name: "Starfall Vibraphone",
+            description: "Glowing vibraphone sparkles floating over subtle hearth crackle and expansive cosmic undertones.",
             parameters: parameters,
             accent: .blue
         )
     }()
     
-    // MARK: - Ritual Pulse
+    // MARK: - Soundscape 4
     
     private static let soundscape4: CuratedPreset = {
         var parameters = SoundscapeParameters()
         
         parameters.selectedBaseMelodyLoop = .dreamtime
         parameters.isBaseMelodyActive = true
-        parameters.baseMelodyVolume = 0.30
+        parameters.baseMelodyVolume = 0.50
         
         parameters.selectedInstrument = .magicMallet
         parameters.isInstrumentActive = true
-        parameters.instrumentVolume = 0.48
+        parameters.instrumentVolume = 0.68
         
         parameters.melodyIntervalDelay = 0.7
         parameters.scale = .eLydian
         
         parameters.oceanVolume = 0.0
-        parameters.rainVolume = 0.02
+        parameters.rainVolume = 0.22
         parameters.fireVolume = 0.0
         parameters.deepDroneVolume = 0.0
-        parameters.airyDroneVolume = 0.16
+        parameters.airyDroneVolume = 0.36
         parameters.didgeridooVolume = 0.0
         parameters.snapVolume = 0.0
         parameters.drumVolume = 0.0
@@ -160,34 +160,34 @@ enum PresetData {
         parameters.cosmicVolume = 0.0
         
         return CuratedPreset(
-            name: "soundscape4",
-            description: "A rhythmic soundscape with earthy movement.",
+            name: "Dreamtime Mallets",
+            description: "Fast, shimmering mallet arpeggios dancing across gentle rainfall and an uplifting Lydian scale.",
             parameters: parameters,
             accent: .pink
         )
     }()
     
-    // MARK: - Ritual Pulse
+    // MARK: - Soundscape 5
     
     private static let soundscape5: CuratedPreset = {
         var parameters = SoundscapeParameters()
         
         parameters.selectedBaseMelodyLoop = .angelicFrequencies
         parameters.isBaseMelodyActive = true
-        parameters.baseMelodyVolume = 0.69
+        parameters.baseMelodyVolume = 0.89
         
         parameters.selectedInstrument = .bell
         parameters.isInstrumentActive = true
-        parameters.instrumentVolume = 0.53
+        parameters.instrumentVolume = 0.73
         
         parameters.melodyIntervalDelay = 3.7
         parameters.scale = .cMajorPentatonic
         
-        parameters.oceanVolume = 0.41
+        parameters.oceanVolume = 0.61
         parameters.rainVolume = 0.0
         parameters.fireVolume = 0.0
         parameters.deepDroneVolume = 0.0
-        parameters.airyDroneVolume = 0.48
+        parameters.airyDroneVolume = 0.68
         parameters.didgeridooVolume = 0.0
         parameters.snapVolume = 0.0
         parameters.drumVolume = 0.0
@@ -196,25 +196,25 @@ enum PresetData {
         parameters.cosmicVolume = 0.0
         
         return CuratedPreset(
-            name: "soundscape5",
-            description: "A rhythmic soundscape with earthy movement.",
+            name: "Angelic Shoreline",
+            description: "Luminous celestial frequencies paired with resonant temple bells and cascading ocean surf.",
             parameters: parameters,
             accent: .teal
         )
     }()
     
-    // MARK: - Ritual Pulse
+    // MARK: - Soundscape 6
     
     private static let soundscape6: CuratedPreset = {
         var parameters = SoundscapeParameters()
         
         parameters.selectedBaseMelodyLoop = .etherealWinds
         parameters.isBaseMelodyActive = true
-        parameters.baseMelodyVolume = 0.5
+        parameters.baseMelodyVolume = 0.7
         
         parameters.selectedInstrument = .taikoDrum
         parameters.isInstrumentActive = true
-        parameters.instrumentVolume = 0.41
+        parameters.instrumentVolume = 0.61
         
         parameters.melodyIntervalDelay = 1.4
         parameters.scale = .eLydian
@@ -222,35 +222,35 @@ enum PresetData {
         parameters.oceanVolume = 0.0
         parameters.rainVolume = 0.0
         parameters.fireVolume = 0.0
-        parameters.deepDroneVolume = 0.66
+        parameters.deepDroneVolume = 0.86
         parameters.airyDroneVolume = 0.0
         parameters.didgeridooVolume = 0.0
         parameters.snapVolume = 0.0
         parameters.drumVolume = 1.0
         parameters.percussionVolume = 0.0
-        parameters.purrVolume = 0.52
+        parameters.purrVolume = 0.72
         parameters.cosmicVolume = 0.0
         
         return CuratedPreset(
-            name: "soundscape6",
-            description: "A rhythmic soundscape with earthy movement.",
+            name: "Taiko Solitude",
+            description: "Deep, powerful drum resonance cutting through ethereal mountain winds and grounding sub-drones.",
             parameters: parameters,
             accent: .purple
         )
     }()
     
-    // MARK: - Ritual Pulse
+    // MARK: - Soundscape 7
     
     private static let soundscape7: CuratedPreset = {
         var parameters = SoundscapeParameters()
         
         parameters.selectedBaseMelodyLoop = .innerSanctuary
         parameters.isBaseMelodyActive = true
-        parameters.baseMelodyVolume = 0.58
+        parameters.baseMelodyVolume = 0.78
         
         parameters.selectedInstrument = .handpan
         parameters.isInstrumentActive = true
-        parameters.instrumentVolume = 0.62
+        parameters.instrumentVolume = 0.82
         
         parameters.melodyIntervalDelay = 3.7
         parameters.scale = .eLydian
@@ -258,35 +258,35 @@ enum PresetData {
         parameters.oceanVolume = 0.0
         parameters.rainVolume = 0.0
         parameters.fireVolume = 0.0
-        parameters.deepDroneVolume = 0.42
+        parameters.deepDroneVolume = 0.62
         parameters.airyDroneVolume = 0.0
         parameters.didgeridooVolume = 0.0
-        parameters.snapVolume = 0.1
+        parameters.snapVolume = 0.3
         parameters.drumVolume = 0.0
         parameters.percussionVolume = 0.0
         parameters.purrVolume = 0.0
         parameters.cosmicVolume = 0.0
         
         return CuratedPreset(
-            name: "soundscape7",
-            description: "A rhythmic soundscape with earthy movement.",
+            name: "Inner Sanctum",
+            description: "Meditative acoustic handpan echoing within a still, low-drone sanctuary.",
             parameters: parameters,
             accent: .orange
         )
     }()
     
-    // MARK: - Ritual Pulse
+    // MARK: - Soundscape 8
     
     private static let soundscape8: CuratedPreset = {
         var parameters = SoundscapeParameters()
         
         parameters.selectedBaseMelodyLoop = .ancestralRhythm
         parameters.isBaseMelodyActive = true
-        parameters.baseMelodyVolume = 0.83
+        parameters.baseMelodyVolume = 1.0
         
         parameters.selectedInstrument = .bass
         parameters.isInstrumentActive = true
-        parameters.instrumentVolume = 0.46
+        parameters.instrumentVolume = 0.66
         
         parameters.melodyIntervalDelay = 0.9
         parameters.scale = .hirajoshi
@@ -294,35 +294,35 @@ enum PresetData {
         parameters.oceanVolume = 0.0
         parameters.rainVolume = 0.0
         parameters.fireVolume = 0.0
-        parameters.deepDroneVolume = 0.45
+        parameters.deepDroneVolume = 0.65
         parameters.airyDroneVolume = 0.0
         parameters.didgeridooVolume = 0.0
-        parameters.snapVolume = 0.1
+        parameters.snapVolume = 0.3
         parameters.drumVolume = 1.0
-        parameters.percussionVolume = 0.18
-        parameters.purrVolume = 0.52
+        parameters.percussionVolume = 0.38
+        parameters.purrVolume = 0.72
         parameters.cosmicVolume = 0.0
         
         return CuratedPreset(
-            name: "soundscape8",
-            description: "A rhythmic soundscape with earthy movement.",
+            name: "Ancestral Hearth",
+            description: "A hypnotic tribal pulse combining driving acoustic percussion, deep bass, and ancient rhythm.",
             parameters: parameters,
             accent: .indigo
         )
     }()
     
-    // MARK: - Ritual Pulse
+    // MARK: - Soundscape 9
     
     private static let soundscape9: CuratedPreset = {
         var parameters = SoundscapeParameters()
         
         parameters.selectedBaseMelodyLoop = .resonantBells
         parameters.isBaseMelodyActive = true
-        parameters.baseMelodyVolume = 0.83
+        parameters.baseMelodyVolume = 1.0
         
         parameters.selectedInstrument = .magicMallet
         parameters.isInstrumentActive = true
-        parameters.instrumentVolume = 0.18
+        parameters.instrumentVolume = 0.38
         
         parameters.melodyIntervalDelay = 1.1
         parameters.scale = .cMajorPentatonic
@@ -331,44 +331,44 @@ enum PresetData {
         parameters.rainVolume = 0.0
         parameters.fireVolume = 0.0
         parameters.deepDroneVolume = 0.0
-        parameters.airyDroneVolume = 0.39
+        parameters.airyDroneVolume = 0.59
         parameters.didgeridooVolume = 0.0
         parameters.snapVolume = 0.0
         parameters.drumVolume = 0.0
-        parameters.percussionVolume = 0.18
+        parameters.percussionVolume = 0.38
         parameters.purrVolume = 0.0
-        parameters.cosmicVolume = 0.08
+        parameters.cosmicVolume = 0.28
         
         return CuratedPreset(
-            name: "soundscape9",
-            description: "A rhythmic soundscape with earthy movement.",
+            name: "Crystal Aurora",
+            description: "Sparkling bell loops met by shimmering mallet textures and airy, cosmic drift.",
             parameters: parameters,
             accent: .gold
         )
     }()
     
-    // MARK: - Ritual Pulse
+    // MARK: - Soundscape 10
     
     private static let soundscape10: CuratedPreset = {
         var parameters = SoundscapeParameters()
         
         parameters.selectedBaseMelodyLoop = .introspection
         parameters.isBaseMelodyActive = true
-        parameters.baseMelodyVolume = 0.54
+        parameters.baseMelodyVolume = 0.74
         
         parameters.selectedInstrument = .guitarStrum
         parameters.isInstrumentActive = true
-        parameters.instrumentVolume = 0.82
+        parameters.instrumentVolume = 1.0
         
         parameters.melodyIntervalDelay = 1.3
         parameters.scale = .aMinorPentatonic
         
         parameters.oceanVolume = 0.0
         parameters.rainVolume = 0.0
-        parameters.fireVolume = 0.37
-        parameters.deepDroneVolume = 0.53
+        parameters.fireVolume = 0.57
+        parameters.deepDroneVolume = 0.73
         parameters.airyDroneVolume = 0.0
-        parameters.didgeridooVolume = 0.09
+        parameters.didgeridooVolume = 0.29
         parameters.snapVolume = 0.0
         parameters.drumVolume = 0.0
         parameters.percussionVolume = 0.0
@@ -376,30 +376,30 @@ enum PresetData {
         parameters.cosmicVolume = 0.0
         
         return CuratedPreset(
-            name: "soundscape10",
-            description: "A rhythmic soundscape with earthy movement.",
+            name: "Ember Introspection",
+            description: "Intimate acoustic guitar strums resonating beside a warm fireside crackle and subtle didgeridoo.",
             parameters: parameters,
             accent: .blue
         )
     }()
     
-    // MARK: - Ritual Pulse
+    // MARK: - Soundscape 11
     
     private static let soundscape11: CuratedPreset = {
         var parameters = SoundscapeParameters()
         
         parameters.selectedBaseMelodyLoop = .meandering
         parameters.isBaseMelodyActive = true
-        parameters.baseMelodyVolume = 0.7
+        parameters.baseMelodyVolume = 0.9
         
         parameters.selectedInstrument = .bell
         parameters.isInstrumentActive = true
-        parameters.instrumentVolume = 0.38
+        parameters.instrumentVolume = 0.58
         
         parameters.melodyIntervalDelay = 1.2
         parameters.scale = .dDorian
         
-        parameters.oceanVolume = 0.2
+        parameters.oceanVolume = 0.4
         parameters.rainVolume = 0.0
         parameters.fireVolume = 0.0
         parameters.deepDroneVolume = 0.0
@@ -408,29 +408,29 @@ enum PresetData {
         parameters.snapVolume = 0.0
         parameters.drumVolume = 0.0
         parameters.percussionVolume = 0.0
-        parameters.purrVolume = 0.2
+        parameters.purrVolume = 0.4
         parameters.cosmicVolume = 0.0
         
         return CuratedPreset(
-            name: "soundscape11",
-            description: "A rhythmic soundscape with earthy movement.",
+            name: "Coastal Meander",
+            description: "Playful Dorian bell melodies wandering along rhythmic coastal swells and soothing purr textures.",
             parameters: parameters,
             accent: .pink
         )
     }()
     
-    // MARK: - Ritual Pulse
+    // MARK: - Soundscape 12
     
     private static let soundscape12: CuratedPreset = {
         var parameters = SoundscapeParameters()
         
         parameters.selectedBaseMelodyLoop = .mysteriousRealms
         parameters.isBaseMelodyActive = true
-        parameters.baseMelodyVolume = 0.60
+        parameters.baseMelodyVolume = 0.80
         
         parameters.selectedInstrument = .acousticHarp
         parameters.isInstrumentActive = true
-        parameters.instrumentVolume = 0.66
+        parameters.instrumentVolume = 0.86
         
         parameters.melodyIntervalDelay = 2.0
         parameters.scale = .cMajorPentatonic
@@ -438,44 +438,44 @@ enum PresetData {
         parameters.oceanVolume = 0.0
         parameters.rainVolume = 0.0
         parameters.fireVolume = 0.0
-        parameters.deepDroneVolume = 0.33
+        parameters.deepDroneVolume = 0.53
         parameters.airyDroneVolume = 0.0
-        parameters.didgeridooVolume = 0.29
+        parameters.didgeridooVolume = 0.49
         parameters.snapVolume = 0.0
         parameters.drumVolume = 0.0
-        parameters.percussionVolume = 0.13
+        parameters.percussionVolume = 0.33
         parameters.purrVolume = 0.0
         parameters.cosmicVolume = 0.0
         
         return CuratedPreset(
-            name: "soundscape12",
-            description: "A rhythmic soundscape with earthy movement.",
+            name: "Mystic Canopy",
+            description: "Delicate acoustic harp patterns drifting over earthy drone hums and grounded rhythmic accents.",
             parameters: parameters,
             accent: .teal
         )
     }()
     
-    // MARK: - Ritual Pulse
+    // MARK: - Soundscape 13
     
     private static let soundscape13: CuratedPreset = {
         var parameters = SoundscapeParameters()
         
         parameters.selectedBaseMelodyLoop = .expansiveDrift
         parameters.isBaseMelodyActive = true
-        parameters.baseMelodyVolume = 0.70
+        parameters.baseMelodyVolume = 0.90
         
         parameters.selectedInstrument = .singingBowl
         parameters.isInstrumentActive = true
-        parameters.instrumentVolume = 0.42
+        parameters.instrumentVolume = 0.62
         
         parameters.melodyIntervalDelay = 2.6
         parameters.scale = .aMinorPentatonic
         
-        parameters.oceanVolume = 0.28
+        parameters.oceanVolume = 0.48
         parameters.rainVolume = 0.0
         parameters.fireVolume = 0.0
         parameters.deepDroneVolume = 0.0
-        parameters.airyDroneVolume = 0.32
+        parameters.airyDroneVolume = 0.52
         parameters.didgeridooVolume = 0.0
         parameters.snapVolume = 0.0
         parameters.drumVolume = 0.0
@@ -484,8 +484,8 @@ enum PresetData {
         parameters.cosmicVolume = 0.0
         
         return CuratedPreset(
-            name: "soundscape13",
-            description: "A rhythmic soundscape with earthy movement.",
+            name: "Expansive Void",
+            description: "Sustained singing bowl harmonics melting into expansive ocean tides and infinite airy space.",
             parameters: parameters,
             accent: .purple
         )
