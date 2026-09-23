@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <a href="Documentation/Media/ambiflow-sample.mp3">▶ Listen to an AmbiFlow sample</a>
+  <a href="https://vibrant-impact.github.io/AmbiFlow/audio-demo.html">▶ Listen to an AmbiFlow sample</a>
 </p>
 
 ---
