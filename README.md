@@ -16,10 +16,6 @@
   <a href="#roadmap">Roadmap</a>
 </p>
 
-<p align="center">
-  <a href="https://vibrant-impact.github.io/AmbiFlow/audio-demo.html">▶ Listen to an AmbiFlow sample</a>
-</p>
-
 ---
 
 ## About AmbiFlow
